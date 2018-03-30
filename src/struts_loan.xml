@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<!-- Add packages here -->
+	<package name="loan" extends="struts-default">
+	
+		<!-- 生成注册绑定信息 -->
+		<action name="testtestloanregisterbind" class="com.loan.action.LoanAction" method="testLoanRegisterBind">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loaneditregisterbindtest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成注册绑定信息 第二步 -->
+		<action name="testtestloanregisterbind2" class="com.loan.action.LoanAction" method="testLoanRegisterBind2">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loanregisterbindtest.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 生成转账信息 -->
+		<action name="testtestloantransfer" class="com.loan.action.LoanAction" method="testLoanTransfer">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loanedittransfertest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成转账信息 第二步 -->
+		<action name="testtestloantransfer2" class="com.loan.action.LoanAction" method="testLoanTransfer2">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loantransfertest.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 生成余额查询信息 -->
+		<action name="testtestloanbalancequery" class="com.loan.action.LoanAction" method="testLoanBalanceQuery">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loaneditbalancequerytest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成余额查询信息 第二步 -->
+		<action name="testtestloanbalancequery2" class="com.loan.action.LoanAction" method="testLoanBalanceQuery2">
+		</action>
+		
+		<!-- 生成充值信息 -->
+		<action name="testtestloanrecharge" class="com.loan.action.LoanAction" method="testLoanRecharge">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loaneditrechargetest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成充值信息 第二步 -->
+		<action name="testtestloanrecharge2" class="com.loan.action.LoanAction" method="testLoanRecharge2">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loanrechargetest.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 生成提现信息 -->
+		<action name="testtestloanwithdraws" class="com.loan.action.LoanAction" method="testLoanWithdraws">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loaneditwithdrawstest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成提现信息 第二步 -->
+		<action name="testtestloanwithdraws2" class="com.loan.action.LoanAction" method="testLoanWithdraws2">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loanwithdrawstest.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 生成对账信息 -->
+		<action name="testtestloanorderquery" class="com.loan.action.LoanAction" method="testLoanOrderQuery">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loaneditorderquerytest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成对账信息 第二步 -->
+		<action name="testtestloanorderquery2" class="com.loan.action.LoanAction" method="testLoanOrderQuery2">
+		</action>
+		
+		<!-- 生成授权信息 -->
+		<action name="testtestloanauthorize" class="com.loan.action.LoanAction" method="testLoanAuthorize">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loaneditauthorizetest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成授权信息 第二步 -->
+		<action name="testtestloanauthorize2" class="com.loan.action.LoanAction" method="testLoanAuthorize2">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loanauthorizetest.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 生成资金释放信息 -->
+		<action name="testtestloanrelease" class="com.loan.action.LoanAction" method="testLoanRelease">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loaneditreleasetest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成资金释放信息 第二步 -->
+		<action name="testtestloanrelease2" class="com.loan.action.LoanAction" method="testLoanRelease2">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loanreleasetest.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 生成审核信息 -->
+		<action name="testtestloantransferaudit" class="com.loan.action.LoanAction" method="testLoanTransferAudit">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loanedittransferaudittest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成审核信息 第二步 -->
+		<action name="testtestloantransferaudit2" class="com.loan.action.LoanAction" method="testLoanTransferAudit2">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loantransferaudittest.jsp
+				</param>
+			</result>
+		</action>
+
+		<!-- 生成三合一信息 -->
+		<action name="testtestloanfastpay" class="com.loan.action.LoanAction" method="testLoanFastPay">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loaneditfastpaytest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成三合一信息 第二步 -->
+		<action name="testtestloanfastpay2" class="com.loan.action.LoanAction" method="testLoanFastPay2">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loanfastpaytest.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 生成验证码发送信息 -->
+		<action name="testtestloansendverifycode" class="com.loan.action.LoanAction" method="testLoanSendVerifyCode">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loaneditsendverifycodetest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成验证码发送信息 第二步 -->
+		<action name="testtestloansendverifycode2" class="com.loan.action.LoanAction" method="testLoanSendVerifyCode2">
+		</action>
+		
+		<!-- 生成姓名匹配信息 -->
+		<action name="testtestidentitymatching" class="com.loan.action.LoanAction" method="testIdentityMatching">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/loaneditidentitymatchingtest.jsp
+				</param>
+			</result>
+		</action>
+		<!-- 生成姓名匹配信息 第二步 -->
+		<action name="testtestidentitymatching2" class="com.loan.action.LoanAction" method="testIdentityMatching2">
+		</action>
+		
+		<!-- 接收注册绑定页面返回信息 -->
+		<action name="testloanregisterbindreturn" class="com.loan.action.LoanAction" method="testLoanRegisterBindReturn">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/testregisterbindreturn.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 接收注册绑定后台通知信息 -->
+		<action name="testloanregisterbindnotify" class="com.loan.action.LoanAction" method="testLoanRegisterBindNotify">
+		</action>
+		
+		<!-- 接收转账页面返回信息 -->
+		<action name="testloantransferreturn" class="com.loan.action.LoanAction" method="testLoanTransferReturn">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/testtransferreturn.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 接收转账后台通知信息 -->
+		<action name="testloantransfernotify" class="com.loan.action.LoanAction" method="testLoanTransferNotify">
+		</action>
+		
+		<!-- 接收充值页面返回信息 -->
+		<action name="testloanrechargereturn" class="com.loan.action.LoanAction" method="testLoanRechargeReturn">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/testrechargereturn.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 接收充值后台通知信息 -->
+		<action name="testloanrechargenotify" class="com.loan.action.LoanAction" method="testLoanRechargeNotify">
+		</action>
+		
+		<!-- 接收提现页面返回信息 -->
+		<action name="testloanwithdrawsreturn" class="com.loan.action.LoanAction" method="testLoanWithdrawsReturn">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/testwithdrawsreturn.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 接收提现后台通知信息 -->
+		<action name="testloanwithdrawsnotify" class="com.loan.action.LoanAction" method="testLoanWithdrawsNotify">
+		</action>
+		
+		<!-- 接收授权页面返回信息 -->
+		<action name="testloanauthorizereturn" class="com.loan.action.LoanAction" method="testLoanAuthorizeReturn">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/testauthorizereturn.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 接收授权后台通知信息 -->
+		<action name="testloanauthorizenotify" class="com.loan.action.LoanAction" method="testLoanAuthorizeNotify">
+		</action>
+		
+		<!-- 接收释放页面返回信息 -->
+		<action name="testloanreleasereturn" class="com.loan.action.LoanAction" method="testLoanReleaseReturn">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/testreleasereturn.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 接收释放后台通知信息 -->
+		<action name="testloanreleasenotify" class="com.loan.action.LoanAction" method="testLoanReleaseNotify">
+		</action>
+		
+		<!-- 接收审核页面返回信息 -->
+		<action name="testloantransferauditreturn" class="com.loan.action.LoanAction" method="testLoanTransferAuditReturn">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/testtransferauditreturn.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 接收审核后台通知信息 -->
+		<action name="testloantransferauditnotify" class="com.loan.action.LoanAction" method="testLoanTransferAuditNotify">
+		</action>
+		
+		<!-- 接收三合一页面返回信息 -->
+		<action name="testloanfastpayreturn" class="com.loan.action.LoanAction" method="testLoanFastPayReturn">
+			<result name="success" type="dispatcher">
+				<param name="location">
+				/loan/testfastpayreturn.jsp
+				</param>
+			</result>
+		</action>
+		
+		<!-- 接收三合一后台通知信息 -->
+		<action name="testloanfastpaynotify" class="com.loan.action.LoanAction" method="testLoanFastPayNotify">
+		</action>
+		
+		<!-- 接收验证码发送后台通知信息 -->
+		<action name="testloansendverifycodenotify" class="com.loan.action.LoanAction" method="testLoanSendVerifyCodeNotify">
+		</action>
+		
+		<!-- 接收姓名匹配后台通知信息 -->
+		<action name="testidentitymatchingnotify" class="com.loan.action.LoanAction" method="testIdentityMatchingNotify">
+		</action>
+		
+	</package>
+</struts>
